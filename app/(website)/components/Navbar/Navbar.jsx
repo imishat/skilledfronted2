@@ -11,9 +11,10 @@ import { CiSearch } from "react-icons/ci";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { RxCross2 } from "react-icons/rx";
 import Sidebar from "../Sidebar/Sidebar";
-import Onboarding from "../auth/Onboarding";
+
 import NavAction from "./NavAction";
 import useToast from "@/app/components/ui/toast";
+import Onboarding from "../Auth/Onboarding";
 
 const Navbar = () => {
   // Local State
