@@ -1,10 +1,8 @@
-// const makeApiUrl = path => `${process.env.API_URL}/${path}`;
+// const makeApiUrl = path => `${http://104.131.168.151/api/v1}/${path}`;
 const makeApiUrl = path => {
-  let baseUrl = process.env.NEXT_PUBLIC_API_URL;
+  const baseUrl = "http://104.131.168.151/api/v1"; // Wrap the base URL in quotes
 
-  if (process.env.API_URL && process.env.API_URL !== "") {
-    baseUrl = process.env.API_URL;
-  }
+  // No need to check if the baseUrl is defined and not empty since it's a constant
 
   return `${baseUrl}/${path}`;
 };
